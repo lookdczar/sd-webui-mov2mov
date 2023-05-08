@@ -16,4 +16,4 @@ if not launch.is_installed('ffmpeg'):
     print('Installing requirements for Mov2mov')
     launch.run_pip("install ffmpeg", "requirements for ffmpeg")
     if plat == 'linux':
-        launch.run_pip("install install imageio-ffmpeg", "requirements for imageio-ffmpeg")
+        launch.run_pip("install imageio[ffmpeg]", "requirements for imageio-ffmpeg")
