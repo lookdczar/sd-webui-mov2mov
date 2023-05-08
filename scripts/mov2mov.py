@@ -144,7 +144,7 @@ def process_mov2mov(p, mov_file, movie_frames, max_frames, resize_mode, w, h, ge
 
     video = images_to_video(generate_images, movie_frames, mode, codec=codec, w=w, h=h,
                             out_path=os.path.join(shared.opts.data.get("mov2mov_output_dir", mov2mov_output_dir),
-                                         str(int(time.time())) 
+                                         str(int(time.time())) + r_f, ))
     print(f'The generation is complete, the directory::{video}')
 
     return video
